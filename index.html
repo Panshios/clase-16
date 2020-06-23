@@ -80,7 +80,7 @@
 
                     <button type="button" id="sidebarCollapse" class="btn btn-info">
                         <i class="fas fa-align-left"></i>
-                        <span>Toggle Sidebar</span>
+                        <span>Menu</span>
                     </button>
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-align-justify"></i>
@@ -144,7 +144,7 @@
                     var nombre = results.data;
                     for (let i = 1; i < nombre.length + 1; i++) {
                         $("#articulos").append(
-                             '<h3 class="m-4 text-center">"' + nombre[i][0] + '"</h3><img class="card-img-top" src="'+ nombre[i][2] + '"><p>' + nombre[i][3] + '</p><div class="line"></div></div>');
+                             '<h3 class="m-4 text-center">"' + nombre[i][0] + '"</h3><img class="card-img-top" src="'+ nombre[i][2] + '"><div class="line"><p>' + nombre[i][3] + '</p><div class="line"></div></div>');
                 }
             }
          }
