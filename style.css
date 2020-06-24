@@ -29,6 +29,17 @@ img {
     padding-top: 5%;
     display: block;
     margin: 0 auto;
+
+}
+.header {
+    color: rgb(100,73,170);
+    font-size: 27px;
+    padding: 10px;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: rgb(100,73,170);
 }
 p[max-device-width: 770px]{
     padding-right: 5%;
@@ -72,6 +83,13 @@ div.sticky {
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
+  z-index:999;
+}
+div.progress-bar{
+    text-align:left; 
+    padding-left:2%; 
+    font-weight:bold;
+    font-size: 16px;
 }
 
 /* ---------------------------------------------------
@@ -211,3 +229,11 @@ a.article:hover {
         display: none;
     }
 }
+/* ---------------------------------------------------
+    CHART PA LO PIBE
+----------------------------------------------------- */
+    canvas {
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+    }
