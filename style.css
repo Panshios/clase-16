@@ -22,16 +22,7 @@ h3 {
     font-weight: bold;
     padding-top: 10%;
 }
-.header {
-    color: rgb(100,73,170);
-    font-size: 27px;
-    padding: 10px;
-}
 
-.bigicon {
-    font-size: 35px;
-    color: rgb(100,73,170);
-}
 img {
     max-width:80%;
     height:auto;
@@ -76,6 +67,11 @@ a:focus {
     height: 1px;
     border-bottom: 1px dashed #ddd;
     margin: 40px 0;
+}
+div.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
 }
 
 /* ---------------------------------------------------
