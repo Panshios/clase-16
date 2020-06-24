@@ -35,6 +35,10 @@ p[max-device-width: 770px]{
     padding-left: 5%;
     padding-top: 5%;
 }
+a.link {
+    font-weight: bold;
+    color: rgb(215,130,74);
+}
 a,
 a:hover,
 a:focus {
