@@ -54,16 +54,13 @@
                     <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-copy"></i> Portafolio</a>
                     <ul class="collapse list-unstyled" id="pageSubmenu">
                         <li>
-                            <a href="#">Diseño</a>
+                            <a href="dise.html">Diseño</a>
                         </li>
                         <li>
                             <a href="ilus.html">Ilustración</a>
                         </li>
                         <li>
                             <a href="vide.html">Videojuegos</a>
-                        </li>
-                        <li>
-                            <a href="otro.html">Otros</a>
                         </li>
                     </ul>
                 </li>
@@ -120,7 +117,7 @@
                     var nombre = results.data;
                     for (let i = 1; i < nombre.length + 1; i++) {
                         $("#articulos").append(
-                             '<h3 class="m-4 text-center">"' + nombre[i][0] + '"</h3><img class="card-img-top" src="'+ nombre[i][2] + '" alt="'+ nombre[i][4] +'"><div class="line"><p>' + nombre[i][3] + '</p><div class="line"></div></div>');
+                             '<h3 class="m-4 text-center">"' + nombre[i][0] + '"</h3><img class="card-img-top" src="'+ nombre[i][2] + '" alt="'+ nombre[i][4] +'"><div class="line"><p class="descr" class="text-center">' + nombre[i][3] + '</p><div class="line"></div></div>');
                 }
             }
          }
