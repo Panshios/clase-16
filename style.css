@@ -91,6 +91,11 @@ div.progress-bar{
     font-weight:bold;
     font-size: 16px;
 }
+div.iconorrss{
+    content: "";
+    clear: both;
+    display: table;
+}
 
 /* ---------------------------------------------------
     SIDEBAR STYLE

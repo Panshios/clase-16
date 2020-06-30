@@ -54,16 +54,16 @@
                     <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-copy"></i> Portafolio</a>
                     <ul class="collapse list-unstyled" id="pageSubmenu">
                         <li>
-                            <a href="#">Diseño</a>
+                            <a href="dise.html">Diseño</a>
                         </li>
                         <li>
                             <a href="ilus.html">Ilustración</a>
                         </li>
                         <li>
-                            <a href="#">Videojuegos</a>
+                            <a href="vide.html">Videojuegos</a>
                         </li>
                         <li>
-                            <a href="#">Otros</a>
+                            <a href="otro.html">Otros</a>
                         </li>
                     </ul>
                 </li>
@@ -91,55 +91,62 @@
             </div>
 
             <h1>Contacto</h1>
-            <p>¿Estás interesad@? pues llegaste al lugar correcto<a href="ilus.html">ilustración</a> y <a href="">diseño</a></p>
+            <p>¿Estás interesad@? pues llegaste al lugar correcto</p>
             <div class="line"></div>
 
-            <h2>PLACEHOLDER</h2>
+            <h2>Sígueme en Redes sociales!</h2>
             <p>Acá habrán íconos con links a mis RRSS y tal vez un formulario cuz why not</p>
+            <div class="iconorrss">
+                <a href="https://www.facebook.com/panshios" target="blank">
+        <img src="imagen/icons/facebook.svg" height="64px" width="64px" alt="Facebook Logo" css="fill:rgb(100,73,170);" >Facebook</a>
+        <a  href="https://www.instagram.com/panshios/" target="blank">
+        <img src="imagen/icons/instagram.svg" height="64px" width="64px" alt="Instagram Logo" css="fill:rgb(100,73,170);" >Instagram</a>
+    </div>
 
-            <div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="well well-sm">
-                <form class="form-horizontal" method="post">
-                    <fieldset>
-                        <legend class="text-center header">Contact us</legend>
+<div class="row">
+    <div class="col-md-6 col-md-offset-3" id="form_container">
+        <h2>Contáctame</h2>
+        <p>
+           Adelante no temas
+        </p>
+        <form role="form" method="post" id="reused_form">
 
-                        <div class="form-group">
-                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                            <div class="col-md-8">
-                                <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
-                            <div class="col-md-8">
-                                <input id="email" name="email" type="text" placeholder="Email" class="form-control">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
-                            <div class="col-md-8">
-                                <input id="phone" name="phone" type="text" placeholder="Teléfono" class="form-control">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
-                            <div class="col-md-8">
-                                <textarea class="form-control" id="message" name="message" placeholder="Tu mensaje aquí, me contactaré contigo a la brevedad" rows="7"></textarea>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-12 text-center">
-                                <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
-                            </div>
-                        </div>
-                    </fieldset>
-                </form>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                    <label for="message">
+                        Mensaje:</label>
+                    <textarea class="form-control" type="textarea" name="message" id="message" maxlength="6000" rows="7"></textarea>
+                </div>
             </div>
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <label for="name">
+                        Tu nombre:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                    <label for="email">
+                        Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+            </div>
+
+
+                    <div class="form-group">
+                            <div class="col-md-12 text-center">
+                                <button type="submit" class="btn btn-primary btn-lg"style="background: rgb(100,73,170);">Enviar</button>
+                            </div>
+                        </div>
+
+        </form>
+        <div id="success_message" style="width:100%; height:100%; display:none; ">
+            <h3>Enviado! :)</h3>
+        </div>
+        <div id="error_message"
+                style="width:100%; height:100%; display:none; ">
+                    <h3>Error</h3>
+                    Hubo un problema enviando tu mensaje :(
+
         </div>
     </div>
 </div>
@@ -154,13 +161,10 @@
     </div>
 </div>
 </div>
-
     <!-- /#page-content-wrapper -->
-
   <!-- /#wrapper -->
         </div>
     </div>
-
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -170,8 +174,74 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
     <!-- jQuery Custom Scroller CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- Form's JQuery --> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-    <script type="text/javascript">
+<script>
+$(function()
+{
+    function after_form_submitted(data)
+    {
+        if(data.result == 'success')
+        {
+            $('form#reused_form').hide();
+            $('#success_message').show();
+            $('#error_message').hide();
+        }
+        else
+        {
+            $('#error_message').append('<ul></ul>');
+
+            jQuery.each(data.errors,function(key,val)
+            {
+                $('#error_message ul').append('<li>'+key+':'+val+'</li>');
+            });
+            $('#success_message').hide();
+            $('#error_message').show();
+
+            //reverse the response on the button
+            $('button[type="button"]', $form).each(function()
+            {
+                $btn = $(this);
+                label = $btn.prop('orig_label');
+                if(label)
+                {
+                    $btn.prop('type','submit' );
+                    $btn.text(label);
+                    $btn.prop('orig_label','');
+                }
+            });
+
+        }//else
+    }
+
+    $('#reused_form').submit(function(e)
+      {
+        e.preventDefault();
+
+        $form = $(this);
+        //show some response on the button
+        $('button[type="submit"]', $form).each(function()
+        {
+            $btn = $(this);
+            $btn.prop('type','button' );
+            $btn.prop('orig_label',$btn.text());
+            $btn.text('Enviando');
+        });
+
+
+                    $.ajax({
+                type: "POST",
+                url: 'handler.php',
+                data: $form.serialize(),
+                success: after_form_submitted,
+                dataType: 'json'
+            });
+
+      });
+});
+</script>
+<script type="text/javascript">
         $(document).ready(function () {
             $("#sidebar").mCustomScrollbar({
                 theme: "minimal"
@@ -184,6 +254,7 @@
             });
         });
     </script>
+
 </body>
 
 </html>
